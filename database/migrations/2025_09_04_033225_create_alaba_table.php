@@ -15,7 +15,6 @@ class CreateAlabaTable extends Migration
     {
         Schema::create('alaba', function (Blueprint $table) {
             $table->id();
-            $table->string('alaba');
             $table->timestamps();
         });
     }

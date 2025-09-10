@@ -81,8 +81,8 @@
   --bs-body-line-height: 1.6;
   --bs-body-color: #212529;
   --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg: #f8fafc;
-  --bs-body-bg-rgb: 248, 250, 252;
+  --bs-body-bg: #ffffff;
+  --bs-body-bg-rgb: 255, 255, 255;
   --bs-emphasis-color: #000;
   --bs-emphasis-color-rgb: 0, 0, 0;
   --bs-secondary-color: rgba(33, 37, 41, 0.75);
@@ -2476,10 +2476,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #f8fafc, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 1px #ffffff, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #f8fafc, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 1px #ffffff, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -11979,4 +11979,192 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.home-page {
+  min-height: 100vh;
+  position: relative;
+  background: url("/images/hero-bg.jpg") no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.home-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.home-page .home-hero {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 600px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+.home-page .home-hero h1, .home-page .home-hero .h1 {
+  color: #343a40;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+.home-page .home-hero p {
+  color: #6c757d;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.home-page .home-hero .hero-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.home-page .home-hero .hero-btn:hover {
+  background: #0056b3;
+  color: #fff;
+}
+
+.aboutus-page {
+  max-width: 700px;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+.aboutus-page h2, .aboutus-page .h2 {
+  font-size: 2rem;
+  color: #343a40;
+  margin-bottom: 16px;
+}
+.aboutus-page p {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+#contactus {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+#contactus h1, #contactus .h1 {
+  color: #333;
+}
+#contactus p {
+  color: #555;
+  line-height: 1.5;
+}
+#contactus .contact-form {
+  margin-top: 20px;
+}
+#contactus .contact-form input, #contactus .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#contactus .contact-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#contactus .contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.contactus-page {
+  max-width: 700px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+.contactus-page h2, .contactus-page .h2 {
+  font-size: 2rem;
+  color: #343a40;
+  margin-bottom: 16px;
+}
+.contactus-page p {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+.contactus-page a {
+  color: #007bff;
+  text-decoration: underline;
+}
+.contactus-page a:hover {
+  color: #0056b3;
+}
+
+.navbar {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  color: #343a40;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.navbar-links {
+  list-style: none !important;
+  display: flex !important;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navbar-links li {
+  display: inline-block !important;
+}
+
+.navbar-links li a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+}
+
+.navbar-links li a:hover {
+  background-color: #f0f4fa;
+  color: #0056b3;
 }
